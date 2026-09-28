@@ -242,6 +242,7 @@ summary:hover { background: var(--accent-soft); }
   color: var(--muted); border: 1px solid var(--rule); border-radius: 3px; padding: 1px 8px; background: #fbfaf7;
 }
 .course-meta { margin: 4px 0 0; font-family: var(--sans); font-size: 15px; color: var(--muted); }
+.rate strong { color: var(--accent); font-weight: 600; font-size: 15.5px; }
 .course-more { margin-top: 10px; }
 .course-desc { margin: 12px 0 0; padding-left: 14px; border-left: 2px solid var(--rule); font-size: 16px; color: #33373d; }
 .course-honor {
