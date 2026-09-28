@@ -5,7 +5,7 @@ Edit content in _src/*.html, then run:  python3 build.py
 from pathlib import Path
 
 ROOT = Path(__file__).parent
-CV = "https://drive.google.com/file/d/1g3-t7GjXTxpQe8bLHAco3GwJsJYnV0Ms/view?usp=sharing"
+CV = "assets/Tom_Kwon_CV.pdf"
 
 PAGES = [
     # file, nav label, <title>
@@ -37,7 +37,7 @@ SIDEBAR = f"""<aside class="sidebar">
         <li>{icon("mail")}<a href="mailto:tom.kwon@ucl.ac.uk">tom.kwon@ucl.ac.uk</a></li>
         <li>{icon("school")}<a href="https://www.mgmt.ucl.ac.uk/people/tomkwon">UCL profile</a></li>
         <li>{icon("scholar")}<a href="https://scholar.google.com/citations?user=ItulQVQAAAAJ&amp;hl=en">Google Scholar</a></li>
-        <li>{icon("file")}<a href="{CV}">Curriculum vitae</a></li>
+        <li>{icon("file")}<a href="{CV}" target="_blank" rel="noopener">Curriculum vitae (PDF)</a></li>
       </ul>
       <a class="sb-logo" href="https://www.mgmt.ucl.ac.uk/"><img src="assets/ucl-som-logo.png" alt="UCL School of Management" width="120" height="40"></a>
     </aside>"""
@@ -46,8 +46,9 @@ SIDEBAR = f"""<aside class="sidebar">
 def nav(active):
     items = [(f, label) for f, label, _ in PAGES] + [(CV, "CV")]
     cls = ' class="active"'
+    newtab = ' target="_blank" rel="noopener"'
     return "\n".join(
-        f'      <a href="{href}"{cls if label == active else ""}>{label}</a>'
+        f'      <a href="{href}"{cls if label == active else ""}{newtab if href == CV else ""}>{label}</a>'
         for href, label in items)
 
 
