@@ -83,6 +83,8 @@ nav a.active { color: var(--text); box-shadow: inset 0 -1.5px 0 var(--accent); }
   font-size: 14.5px;
 }
 .sb-links li { display: flex; align-items: center; gap: 10px; padding: 4px 0; color: var(--muted); }
+.sb-links li.sb-addr { align-items: flex-start; line-height: 1.45; }
+.sb-links li.sb-addr svg { margin-top: 2px; }
 .sb-links svg { width: 16px; height: 16px; flex: none; color: var(--faint); }
 .sb-links a { color: var(--text); }
 .sb-links a:hover { color: var(--accent); }
