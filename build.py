@@ -33,7 +33,7 @@ SIDEBAR = f"""<aside class="sidebar">
       <p class="sb-name">Tom Kwon</p>
       <p class="sb-role"><em>Assistant Professor</em><br>Strategy &amp; Entrepreneurship<br>UCL School of Management</p>
       <ul class="sb-links">
-        <li class="sb-addr">{icon("pin")}<span>Level 38, One Canada Square<br>Canary Wharf, London E14 5AA</span></li>
+        <li>{icon("pin")}<span>London, UK</span></li>
         <li>{icon("mail")}<a href="mailto:tom.kwon@ucl.ac.uk">tom.kwon@ucl.ac.uk</a></li>
         <li>{icon("school")}<a href="https://www.mgmt.ucl.ac.uk/people/tomkwon">UCL profile</a></li>
         <li>{icon("scholar")}<a href="https://scholar.google.com/citations?user=ItulQVQAAAAJ&amp;hl=en">Google Scholar</a></li>
