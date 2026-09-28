@@ -5,7 +5,7 @@ Edit content in _src/*.html, then run:  python3 build.py
 from pathlib import Path
 
 ROOT = Path(__file__).parent
-CV = "https://drive.google.com/file/d/1bGO6VTchjd4wX2JElE8IHOvSiZTmOFNa/view?usp=sharing"
+CV = "https://drive.google.com/file/d/1g3-t7GjXTxpQe8bLHAco3GwJsJYnV0Ms/view?usp=sharing"
 
 PAGES = [
     # file, nav label, <title>
