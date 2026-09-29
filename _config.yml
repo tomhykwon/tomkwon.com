@@ -1,1 +1,1 @@
-exclude: [build.py, README.md]
+exclude: [build.py, README.md, CLAUDE.md]
